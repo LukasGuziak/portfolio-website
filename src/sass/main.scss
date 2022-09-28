@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+}
+
+.header {
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-image: url(../img/heroL.jpg);
+	background-color: rgba(7, 19, 43, 0.8);
+	background-blend-mode: multiply;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.header__errortext {
+	color: white;
+	font-size: 80px;
+}
+h1 {
+	color: white;
+	font-size: 160px;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
+.color {
+	color: red;
+}
+p {
+	color: white;
+	font-size: 50px;
+}
