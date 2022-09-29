@@ -1,0 +1,13 @@
+@mixin titleText($titleSize) {
+	font-size: $titleSize;
+	font-family: var(--ff-heading);
+	color: var(--black);
+	text-transform: uppercase;
+}
+
+@mixin paraText($paraSize) {
+	font-size: $paraSize;
+	font-family: var(--ff-body);
+	color: var(--medium-white);
+	line-height: 1.5;
+}

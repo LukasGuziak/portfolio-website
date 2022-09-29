@@ -1,40 +1,96 @@
+@import './mixins';
+
+:root {
+	--yellow: rgb(255, 215, 3);
+	--dark-yellow: rgb(234, 199, 0);
+	--gold: rgb(235, 211, 88);
+	--black: rgb(10, 10, 10);
+	--white: rgb(255, 255, 255);
+	--medium-white: rgb(252, 251, 244);
+	--dark-white: rgb(213, 213, 213);
+	--light-grey: rgb(119, 118, 116);
+	--medium-grey: rgb(55, 60, 65);
+	--dark-grey: rgb(34, 37, 39);
+	--darkest-grey: rgb(24, 24, 24);
+	--red: rgb(247, 63, 84);
+
+	--ff-primary: 'Roboto', sans-serif;
+	--ff-secondary: 'Montserrat', sans-serif;
+
+	--ff-body: var(--ff-primary);
+	--ff-heading: var(--ff-secondary);
+
+	--fw-regular: 400;
+	--fw-medium: 700;
+	--fw-bold: 900;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+	outline: none;
+	border: none;
+	text-decoration: none;
+	// transition: all 0.2s linear;
 }
 
 html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+
+	// scroll-padding-top: 7rem;
+	// overflow-x: hidden;
 }
+
+body {
+	position: relative;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	font-family: var(--ff-);
+}
+
+.container {
+	max-width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.section {
+	padding: 3em 0em;
+}
+
+// .btn {
+// 	display: inline-block;
+// 	min-width: 150px;
+// 	padding: 0.8em 2em;
+// 	background: var(--black);
+// 	color: var(--white);
+// 	cursor: pointer;
+// 	font-size: 1.6rem;
+// 	text-transform: uppercase;
+// 	border-radius: 5px;
+// 	text-align: center;
+// 	&:hover {
+// 		background: var(--yellow);
+// 		color: var(--black);
+// 	}
+// }
+// .heading {
+// 	margin-bottom: 2em;
+// 	@include titleText(3rem);
+// 	border-left: 1rem solid var(--yellow);
+// 	padding-left: 0.5em;
+// }
 
 .header {
 	height: 100vh;
-	width: 100%;
-	background-size: cover;
-	background-image: url(../img/heroL.jpg);
-	background-color: rgba(7, 19, 43, 0.8);
-	background-blend-mode: multiply;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
+	background-color: var(--dark-grey);
 
-.header__errortext {
-	color: white;
-	font-size: 80px;
-}
-h1 {
-	color: white;
-	font-size: 160px;
-	margin-bottom: 2rem;
-	text-transform: uppercase;
-}
-.color {
-	color: red;
-}
-p {
-	color: white;
-	font-size: 50px;
+	.ja {
+		max-width: 200px;
+	}
 }
