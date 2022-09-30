@@ -8,6 +8,18 @@
 @mixin paraText($paraSize) {
 	font-size: $paraSize;
 	font-family: var(--ff-body);
-	color: var(--medium-white);
+	color: var(--dark-white);
 	line-height: 1.5;
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(1);
+		opacity: 0.5;
+	}
+
+	to {
+		transform: scale(1.4);
+		opacity: 0;
+	}
 }
