@@ -24,18 +24,15 @@
 	--fw-regular: 400;
 	--fw-medium: 700;
 	--fw-bold: 900;
-
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 	outline: none;
 	border: none;
 	text-decoration: none;
-	// transition: all 0.2s linear;
 }
 
 ul,
@@ -46,9 +43,6 @@ ol {
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-
-	// scroll-padding-top: 7rem;
-	// overflow-x: hidden;
 }
 
 body {
@@ -81,7 +75,6 @@ body {
 	color: var(--gold);
 	cursor: pointer;
 	font-size: 1.6rem;
-	// text-transform: uppercase;
 	border: 2px solid var(--gold);
 	border-radius: 40px;
 	text-align: center;
@@ -115,12 +108,6 @@ body {
 		transform: translateX(-50%);
 	}
 }
-// .heading {
-// 	margin-bottom: 2em;
-// 	@include titleText(3rem);
-// 	border-left: 1rem solid var(--yellow);
-// 	padding-left: 0.5em;
-// }
 
 //---------------------
 //-------HEADER--------
@@ -236,16 +223,9 @@ body {
 
 		.hero-img {
 			position: relative;
-			// background-color: rgba($color: #057fc5, $alpha: 0.4);
 			width: 40%;
 			height: 90%;
-			// max-width: 1500px;
-			// left: 0;
-			// bottom: 0;
-			// right: 50%;
-
 			&__item {
-				// background-color: rgba(235, 210, 89, 0.2);
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
@@ -254,7 +234,6 @@ body {
 		}
 		.hero-text {
 			position: relative;
-			// background-color: rgba($color: #c40303, $alpha: 0.2);
 			width: 45%;
 			height: 100%;
 			display: flex;
@@ -270,21 +249,17 @@ body {
 					background-color: var(--medium-white);
 					padding: 1rem 1rem;
 				}
-				// font-family:var(--ff-primary);
 			}
 			&__title2 {
 				@include titleText(5rem);
 				font-weight: var(--fw-bold);
 				color: var(--yellow);
-				// font-family:var(--ff-primary);
 			}
 			&__par {
 				@include paraText(2rem);
-				// color: var(--yellow);
 			}
 			&__link {
 				position: absolute;
-				// background-color: rgba(255, 213, 5, 0.3);
 				width: 80px;
 				height: 80px;
 
@@ -305,11 +280,10 @@ body {
 				img {
 					position: relative;
 					left: 20px;
-					// background-color: red;
 					width: 40px;
 					transition: transform 0.5s;
 					filter: invert(47%) sepia(9%) saturate(4349%) hue-rotate(17deg)
-						brightness(99%) contrast(84%);
+						brightness(99%) contrast(84%); //// KOLORY DO ZMIANY , ŹEEBY BYŁ BEZFILTER !!!!!!
 				}
 				p {
 					@include paraText(1.6rem);
@@ -322,8 +296,6 @@ body {
 				&--one {
 					top: 15%;
 					left: 5%;
-					&::before {
-					}
 				}
 				&--two {
 					top: 10%;
@@ -356,7 +328,6 @@ body {
 				&:hover {
 					img {
 						transform: scale(1.2);
-
 						filter: invert(76%) sepia(91%) saturate(923%) hue-rotate(355deg)
 							brightness(103%) contrast(100%);
 					}
@@ -373,9 +344,7 @@ body {
 //-------ABOUT ME------
 //---------------------
 .about {
-	// position: relative;
 	height: 100vh;
-	// overflow: hidden;
 	background: radial-gradient(
 		circle,
 		var(--dark-grey) 0%,
@@ -383,15 +352,12 @@ body {
 	);
 
 	.about-box {
-		// position: relative;
 		display: flex;
 		flex-direction: row;
 		height: 100%;
-		// max-height: 1000px;
 
 		.about-foto {
 			position: relative;
-			// background-color: rgba(255, 0, 0, 0.5);
 			width: 40%;
 			perspective: 1500px;
 			text-align: center;
@@ -418,13 +384,15 @@ body {
 				border-radius: 30px;
 				overflow: hidden;
 				transition: transform 1s, opacity 1s;
+				.hiden {
+					display: none;
+				}
 			}
 
 			&__card-img {
-				background-image:  url(../img/programmer-example.jpg);
+				background-image: url(../img/programmer-example.jpg);
 				background-size: cover;
 				background-position: center;
-				background-blend-mode:hard-light;
 				&-info {
 					position: absolute;
 					bottom: 1em;
@@ -462,7 +430,6 @@ body {
 			}
 		}
 		.about-desc {
-			// background-color: rgba(0, 255, 85, 0.2);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -527,9 +494,43 @@ body {
 			}
 		}
 	}
+
+	//-------About section----------
+	.about {
+		.about-box {
+			.about-foto {
+				width: 50%;
+			}
+			.about-desc {
+				width: 50%;
+				padding-left: 2%;
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {
+	//-------About section----------
+	.about {
+		.about-box {
+			.about-foto {
+			}
+			.about-desc {
+				&__section-name {
+					font-size: 2.2rem;
+				}
+				&__title {
+					font-size: 3.6rem;
+				}
+				&__title2 {
+					font-size: 2rem;
+				}
+				&__text {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -554,11 +555,99 @@ body {
 			}
 		}
 	}
+	//-------About section----------
+	.about {
+		padding-bottom: 0.5em;
+		.about-box {
+			flex-direction: column;
+			.about-foto {
+				width: 100%;
+				height: 60%;
+				&__card-img {
+					top: 6%;
+					height: 94%;
+					padding: 0.5em;
+					background-color: var(--light-grey);
+					background-blend-mode: multiply;
+				}
+				&__card-info {
+					top: 6%;
+					height: 94%;
+					&-title {
+						font-size: 1.6rem;
+						margin-bottom: 0em;
+					}
+					&-text {
+						margin-bottom: 0.4em;
+						font-size: 2rem;
+						padding-bottom: 0.4em;
+					}
+				}
+			}
+			.about-desc {
+				width: 100%;
+				padding: 2%;
+				height: 40%;
+				&__section-name {
+					margin-bottom: 0.5em;
+					font-size: 2rem;
+				}
+				&__title {
+					margin-bottom: 0;
+					font-size: 3rem;
+				}
+				&__title2 {
+					margin-bottom: 0.5em;
+				}
+				&__text {
+					margin-bottom: 0.8em;
+				}
+				&__reasume {
+					text-align: center;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 575px) {
 	html {
 		font-size: 50%;
+	}
+
+	//-------About section----------
+	.about {
+		.about-box {
+			.about-foto {
+				&__card-img {
+					.hiden {
+						display: block;
+					}
+					.about-desc__section-name {
+						font-size: 2rem;
+						padding-top: 1em;
+					}
+					.about-desc__title {
+						font-size: 2.6rem;
+					}
+				}
+
+			}
+			.about-desc {
+
+				&__section-name,
+				&__title,
+				&__title2 {
+					display: none;
+				}
+				&__text {
+					margin-bottom: 0.8em;
+				}
+				&__reasume {
+					text-align: center;
+				}
+			}
+		}
 	}
 }
 
