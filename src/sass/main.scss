@@ -62,7 +62,7 @@ body {
 }
 
 .section {
-	padding: 3em 0em;
+	padding: 4em 0em 1em;
 }
 
 .btn {
@@ -243,12 +243,7 @@ body {
 
 			&__title1 {
 				@include titleText(5rem);
-				font-weight: var(--fw-bold);
-				color: var(--medium-grey);
-				span {
-					background-color: var(--medium-white);
-					padding: 1rem 1rem;
-				}
+				@include sectionName;
 			}
 			&__title2 {
 				@include titleText(5rem);
@@ -437,13 +432,8 @@ body {
 			padding-left: 2em;
 			&__section-name {
 				@include titleText(3rem);
-				font-weight: var(--fw-bold);
-				color: var(--medium-grey);
+				@include sectionName;
 				margin-bottom: 1em;
-				span {
-					background-color: var(--medium-white);
-					padding: 1rem 1rem;
-				}
 			}
 			&__title {
 				@include titleText(4.6rem);
@@ -465,6 +455,106 @@ body {
 				.btn {
 					font-size: 1.8rem;
 					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+//---------------------
+//-------PORTFOLIO-----
+//---------------------
+
+.portfolio {
+	position: relative;
+	height: 100vh;
+	background-image: url(../img/endless-constellation.svg);
+	background-attachment: fixed;
+
+	&__section-name {
+		text-align: center;
+		@include titleText(2rem);
+		@include sectionName;
+		margin-top: -1em;
+		margin-bottom: 1em;
+	}
+
+	.portfolio-box {
+		position: relative;
+		// max-height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 90%;
+
+		.portfolio-item {
+			display: flex;
+			flex-direction: column;
+			// justify-content: space-between;
+			@include glass;
+			overflow: hidden;
+			width: 32%;
+			height: 100%;
+
+			&__img {
+				width: 100%;
+				border-radius: 20px;
+				padding: 0.5em;
+				opacity: 0.2;
+				transition: opacity 1s;
+			}
+			&__content {
+				display: flex;
+				height: 100%;
+				align-items: center;
+				flex-direction: column;
+				// background-color: rgba(255, 0, 0, 0.1);
+				padding: 1em;
+				transition: background 1s;
+
+				&-title {
+					@include titleText(2rem);
+					color: var(--grey-yellow);
+					text-align: center;
+					margin-bottom: 1em;
+					transition: color 1s;
+				}
+				&-text {
+					@include paraText(1.4rem);
+					text-align: justify;
+					color: var(--light-grey);
+					transition: color 1s;
+					flex-grow: 2;
+
+				}
+				&-btn {
+					font-size: 1.4rem;
+					min-width: 120px;
+					margin: 1em;
+					opacity: 0.5;
+					transition: opacity 1s;
+				}
+			}
+
+			&:hover {
+				background: linear-gradient(
+					135deg,
+					rgba(255, 255, 255, 0.3),
+					rgba(255, 255, 255, 0)
+				);
+				.portfolio-item__img {
+					opacity: 0.9;
+				}
+				.portfolio-item__content {
+					&-title {
+						color: var(--dark-yellow);
+					}
+					&-text {
+						color: var(--dark-white);
+					}
+					&-btn {
+						opacity: 1;
+					}
 				}
 			}
 		}
@@ -513,8 +603,8 @@ body {
 	//-------About section----------
 	.about {
 		.about-box {
-			.about-foto {
-			}
+			// .about-foto {
+			// }
 			.about-desc {
 				&__section-name {
 					font-size: 2.2rem;
@@ -567,8 +657,6 @@ body {
 					top: 6%;
 					height: 94%;
 					padding: 0.5em;
-					background-color: var(--light-grey);
-					background-blend-mode: multiply;
 				}
 				&__card-info {
 					top: 6%;
@@ -620,6 +708,8 @@ body {
 		.about-box {
 			.about-foto {
 				&__card-img {
+					background-color: var(--light-grey);
+					background-blend-mode: multiply;
 					.hiden {
 						display: block;
 					}
@@ -631,10 +721,8 @@ body {
 						font-size: 2.6rem;
 					}
 				}
-
 			}
 			.about-desc {
-
 				&__section-name,
 				&__title,
 				&__title2 {
