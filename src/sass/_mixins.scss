@@ -22,12 +22,12 @@
 	}
 }
 @mixin sectionName {
-    font-weight: var(--fw-bold);
-    color: var(--medium-grey);
-    span {
-        background-color: var(--medium-white);
-        padding: 1rem 1rem;
-    }
+	font-weight: var(--fw-bold);
+	color: var(--medium-grey);
+	span {
+		background-color: var(--medium-white);
+		padding: 1rem 1rem;
+	}
 }
 
 @mixin glass {
@@ -36,11 +36,40 @@
 		rgba(255, 255, 255, 0.1),
 		rgba(255, 255, 255, 0)
 	);
-	backdrop-filter: blur(3px);
+	backdrop-filter: blur(2.5px);
 	border-radius: 20px;
-	border-right: 5px solid rgba(255,255, 255, 0.1);
-	border-bottom: 5px solid rgba(255,255, 255, 0.05);
+	border-right: 5px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 5px solid rgba(255, 255, 255, 0.05);
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@mixin linkIcon {
+	img {
+		position: relative;
+		// left: 20px;
+		width: 40px;
+		transition: transform 0.5s;
+		filter: invert(47%) sepia(9%) saturate(4349%) hue-rotate(17deg)
+			brightness(99%) contrast(84%); //// KOLORY DO ZMIANY , ŹEEBY BYŁ BEZFILTER !!!!!!
+	}
+	p {
+		@include paraText(1.6rem);
+		text-transform: uppercase;
+		text-align: center;
+		color: var(--yellow);
+		opacity: 0;
+		transition: opacity 0.5s;
+	}
+	&:hover {
+		img {
+			transform: scale(1.2);
+			filter: invert(76%) sepia(91%) saturate(923%) hue-rotate(355deg)
+				brightness(103%) contrast(100%);
+		}
+		p {
+			opacity: 1;
+		}
+	}
 }
 
 //ANIMATIONS
@@ -73,3 +102,5 @@
 		opacity: 0;
 	}
 }
+
+

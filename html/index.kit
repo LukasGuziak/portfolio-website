@@ -153,43 +153,113 @@
         <div class="portfolio-box container">
 
             <div class="portfolio-item">
-                <img class="portfolio-item__img" src="/dist/img/lukas-www.jpg" alt="">
+                <a href="">
+                    <img class="portfolio-item__img" src="/dist/img/lukas-www.jpg" alt="">
+                </a>
                 <div class="portfolio-item__content">
                     <h2 class="portfolio-item__content-title">Lukas dev</h2>
                     <p class="portfolio-item__content-text">Strona którą właśnie przeglądasz.</p>
-                    <div class="portfolio-item__content-btn-box">
-                        <button class="portfolio-item__content-btn btn">Wyświetl</button>
-                        <button class="portfolio-item__content-btn btn">github</button>
+                    <div class="portfolio-item__content-link">
+                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/www.png" alt="">
+                            <p>strona</p>
+                        </a>
+                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/github.png" alt="">
+                            <p>github</p>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="portfolio-item">
-                <img class="portfolio-item__img" src="/dist/img/packi-www.jpg" alt="">
+                <a href="">
+                    <img class="portfolio-item__img" src="/dist/img/packi-www.jpg" alt="">
+                </a>
                 <div class="portfolio-item__content">
                     <h2 class="portfolio-item__content-title">Firma meblowa</h2>
                     <p class="portfolio-item__content-text">Strona zaprojektowana dla Łódzkiej firmy tworzącej meble i
                         zabudowy na wymiar. Jest ukończona, jednak klient nie wybrał jeszcze domeny, dlatego aktualnie
                         znajduje się na serwerze testowym pod adresem www.lukasdevtest2.tech </p>
-                    <div class="portfolio-item__content-btn-box">
-                        <button class="portfolio-item__content-btn btn">Wyświetl</button>
-                        <button class="portfolio-item__content-btn btn">github</button>
+                    <div class="portfolio-item__content-link">
+                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/www.png" alt="">
+                            <p>strona</p>
+                        </a>
+                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/github.png" alt="">
+                            <p>github</p>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="portfolio-item">
-                <img class="portfolio-item__img" src="/dist/img/walczakowski-www.jpg" alt="">
+                <a href="">
+                    <img class="portfolio-item__img" src="/dist/img/walczakowski-www.jpg" alt="">
+                </a>
                 <div class="portfolio-item__content">
                     <h2 class="portfolio-item__content-title">Kancelaria prawna</h2>
                     <p class="portfolio-item__content-text">Strona stworzona dla jednej z Łódzkich kancelari. </p>
-                    <div class="portfolio-item__content-btn-box">
-                        <button class="portfolio-item__content-btn btn">Wyświetl</button>
-                        <button class="portfolio-item__content-btn btn">github</button>
-                        <img src="../dist/img/github.svg" alt="">
+                    <div class="portfolio-item__content-link">
+                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/www.png" alt="">
+                            <p>strona</p>
+                        </a>
+                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/github.png" alt="">
+                            <p>github</p>
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="contact section">
+        <p class="contact__section-name"><span>kontakt</span></p>
+        <div class="contact-box container">
+
+            <div class="contact-box-info">
+
+                <div class="contact-box-info__item">
+                    <a class="" href=""><img src="/dist/img/phone-call.png" alt="">
+                        <p class="text1">telefon</p>
+                        <p class="text2">+48 881-333-977</p>
+                    </a>
+                </div>
+
+
+                <div class="contact-box-info__item">
+                    <a class="" href=""><img src="/dist/img/email.png" alt="">
+                        <p class="text1">mail</p>
+                        <p class="text2">guziak.luk@gmail.com</p>
+                    </a>
+                </div>
+
+                <div class="contact-box-info__item">
+                    <a class="" href=""><img src="/dist/img/maps.png" alt="">
+                        <p class="text1">adres</p>
+                        <p class="text2">94-307 Łódź</p>
+                        <p class="text2">ul. Ulicowa 20 m5</p>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <form class="contact-box-form" action="https://formsubmit.co/guziak.luk@gmail.com" method="POST">
+                <h3 class="contact-box-form__header">Napisz do mnie</h3>
+                <p class="contact-box-form__text">Jestem gotowy pomóc w każdym projekcie, który obejmuje moje
+                    umiejętności.</p>
+                <input class="contact-box-form__input" type="text" placeholder="Twoje imię" name="name" required>
+                <!-- <input type="hidden" name="_next" value="https://lukasdevtest2.tech/thankyou.html"> -->
+                <input type="hidden" name="_subject" value="LukasDev - wiadomość ze strony">
+                <input class="contact-box-form__input" type="number" placeholder="Twój telefon" name="phone" required>
+                <input class="contact-box-form__input" type="email" placeholder="Twój adres meilowy" name="email"
+                    required>
+                <input class="contact-box-form__input" type="email" placeholder="Temat wiadomości" name="subject"
+                    required>
+                <textarea class="contact-box-form__input" placeholder="wpisz text wiadomości" id="" cols="30" rows="7"
+                    name="message" required></textarea>
+                <input class="contact-box-form__btn btn" type="submit" value="wyślij ">
+            </form>
+
+
+
         </div>
     </div>
 
