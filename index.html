@@ -25,7 +25,7 @@
 <body>
 
     <div class="logo">
-        <a href="">
+        <a href="#hero">
             <img class="logo__item" src="/dist/img/logo.png" alt="logo formy lukasdev">
         </a>
     </div>
@@ -45,18 +45,18 @@
             </div>
             <nav class="navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="">Start</a></li>
-                    <li class="navigation__item"><a href="">O mnie</a></li>
-                    <li class="navigation__item"><a href="">Portfolio</a></li>
-                    <li class="navigation__item"><a href="">Umiejętności</a></li>
-                    <li class="navigation__item"><a href="">Kontakt</a></li>
+                    <li class="navigation__item"><a href="#hero">Start</a></li>
+                    <li class="navigation__item"><a href="#about">O mnie</a></li>
+                    <li class="navigation__item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="navigation__item"><a href="#skills">Umiejętności</a></li>
+                    <li class="navigation__item"><a href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="reasume">
                 <button class="reasume__btn btn">Pobierz CV</button>
             </div>
             <div class="social">
-                <a class="social__link" href=""><img class="social__img" src="/dist/img/github.svg" alt=""></a>
+                <a class="social__link" href="https://github.com/LukasGuziak" target="_blank"><img class="social__img" src="/dist/img/github.svg" alt=""></a>
                 <a class="social__link" href=""><img class="social__img" src="/dist/img/linkedin.svg" alt=""></a>
             </div>
         </div>
@@ -64,30 +64,29 @@
 
     </header>
 
-    <div class="hero">
+    <div class="hero" id="hero">
 
         <div class="hero-box">
 
             <div class="hero-img">
-                <img class='hero-img__item' src="/dist/img/My project.png" alt="">
+                <img class='hero-img__item' src="/dist/img/ja-M.png" alt="">
             </div>
 
             <div class="hero-text">
                 <p class="hero-text__title1"><span>Hello, i am</span></p>
                 <p class="hero-text__title2">frontend developer.</p>
-                <p class="hero-text__par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-                    quisquam. Totam, inventore doloribus nam atque repellendus recusandae nulla corporis optio?</p>
+                <h3 class="hero-text__title3">Pasjonat programowania i tworzenia stron internetowych z Łodzi</h3>
 
-                <a class="hero-text__link hero-text__link--one" href=""><img src="/dist/img/employee.png" alt="">
+                <a class="hero-text__link hero-text__link--one" href="#about"><img src="/dist/img/employee.png" alt="">
                     <p>about me</p>
                 </a>
-                <a class="hero-text__link hero-text__link--two" href=""><img src="/dist/img/project.png" alt="">
+                <a class="hero-text__link hero-text__link--two" href="#portfolio"><img src="/dist/img/project.png" alt="">
                     <p>projects</p>
                 </a>
-                <a class="hero-text__link hero-text__link--three" href=""><img src="/dist/img/skill.png" alt="">
+                <a class="hero-text__link hero-text__link--three" href="#skills"><img src="/dist/img/skill.png" alt="">
                     <p>skills</p>
                 </a>
-                <a class="hero-text__link hero-text__link--four" href=""><img src="/dist/img/contact-mail.png" alt="">
+                <a class="hero-text__link hero-text__link--four" href="#contact"><img src="/dist/img/contact-mail.png" alt="">
                     <p>contact</p>
                 </a>
                 <a class="hero-text__link hero-text__link--five" href=""><img src="/dist/img/curriculum-vitae.png"
@@ -103,7 +102,7 @@
 
     </div>
 
-    <div class="about section">
+    <div class="about section" id="about">
         <div class="about-box container ">
 
             <div class="about-foto">
@@ -133,9 +132,9 @@
                 <h3 class="about-desc__title2">Pasjonat programowania i tworzenia stron internetowych z Łodzi</h3>
                 <p class="about-desc__text">Cześć! Nazywam się Łukasz Guziak i jestem twórcą stron internetowych. Stało
                     się to moją pasją od ukończenia studiów na kierunku programowanie obiektowe na Uniwersytecie
-                    Łódzkim. Przyjemność jaką daje mi programowanie, sprawa, że ciągle poszerzam nwoją wiedzę i zdobywam
-                    nowe umiejętności. Jestem pewien, że moja pasja i zaangażowanie sprawi, że otrzymasz usługi jakie są
-                    potrzebne do osiągnięcia sukcesu przez Twój projekt.
+                    Łódzkim. Przyjemność jaką daje mi programowanie, sprawa, że ciągle poszerzam swoją wiedzę i zdobywam
+                    nowe umiejętności. Jestem pewien, że moja pasja i zaangażowanie sprawi, że otrzymasz usługi na
+                    najwyższym poziomie, co przełoży się na osiągnięcie sukcesu przez Twój projekt.
                 </p>
                 <div class="about-desc__reasume">
                     <button class="reasume__btn btn">Pobierz CV</button>
@@ -148,12 +147,12 @@
 
     </div>
 
-    <div class="portfolio section">
+    <div class="portfolio section" id="portfolio">
         <p class="portfolio__section-name"><span>portfolio</span></p>
         <div class="portfolio-box container">
 
             <div class="portfolio-item">
-                <a href="">
+                <a href="#hero">
                     <img class="portfolio-item__img" src="/dist/img/lukas-www.jpg" alt="">
                 </a>
                 <div class="portfolio-item__content">
@@ -163,7 +162,7 @@
                         <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/www.png" alt="">
                             <p>strona</p>
                         </a>
-                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/github.png" alt="">
+                        <a class="portfolio-item__content-link-item" href="https://github.com/LukasGuziak/portfolio-website" target="_blank"><img src="/dist/img/github.png" alt="">
                             <p>github</p>
                         </a>
                     </div>
@@ -171,7 +170,7 @@
             </div>
 
             <div class="portfolio-item">
-                <a href="">
+                <a href="https://lukasdevtest2.tech/" target="_blank">
                     <img class="portfolio-item__img" src="/dist/img/packi-www.jpg" alt="">
                 </a>
                 <div class="portfolio-item__content">
@@ -183,7 +182,7 @@
                         <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/www.png" alt="">
                             <p>strona</p>
                         </a>
-                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/github.png" alt="">
+                        <a class="portfolio-item__content-link-item" href="https://github.com/LukasGuziak/furnishing-firm-website" target="_blank"><img src="/dist/img/github.png" alt="">
                             <p>github</p>
                         </a>
                     </div>
@@ -191,7 +190,7 @@
             </div>
 
             <div class="portfolio-item">
-                <a href="">
+                <a href="https://krp-ww.pl/" target="_blank">
                     <img class="portfolio-item__img" src="/dist/img/walczakowski-www.jpg" alt="">
                 </a>
                 <div class="portfolio-item__content">
@@ -201,7 +200,7 @@
                         <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/www.png" alt="">
                             <p>strona</p>
                         </a>
-                        <a class="portfolio-item__content-link-item" href=""><img src="/dist/img/github.png" alt="">
+                        <a class="portfolio-item__content-link-item" href="https://github.com/LukasGuziak/websiteAdvocateOffice" target="_blank"><img src="/dist/img/github.png" alt="">
                             <p>github</p>
                         </a>
                     </div>
@@ -210,102 +209,126 @@
         </div>
     </div>
 
-    <div class="skills section">
+    <div class="skills section" id="skills">
         <p class="skills__section-name"><span>umiejętności</span></p>
         <div class="skills-box container">
 
             <div class="programming">
                 <!-- <div class="programming-section1"> -->
 
-                    <div class="programming-item">
-                        <img class="programming-item__logo" src="/dist/img/html-5.png" alt="">
-                        <h3 class="programming-item__name">HTML</h3>
-                        <div class="programming-item__lvl">
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                        </div>
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/html-5.png" alt="">
+                    <h3 class="programming-item__name">HTML</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty"></div>
                     </div>
+                </div>
 
-                    <div class="programming-item">
-                        <img class="programming-item__logo" src="/dist/img/css-3.png" alt="">
-                        <h3 class="programming-item__name">CSS</h3>
-                        <div class="programming-item__lvl">
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                        </div>
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/css-3.png" alt="">
+                    <h3 class="programming-item__name">CSS</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty"></div>
                     </div>
+                </div>
 
-                    <div class="programming-item">
-                        <img class="programming-item__logo" src="/dist/img/js.png" alt="">
-                        <h3 class="programming-item__name">JavaScript</h3>
-                        <div class="programming-item__lvl">
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                        </div>
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/sass.png" alt="">
+                    <h3 class="programming-item__name">SASS</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
                     </div>
+                </div>
 
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/js.png" alt="">
+                    <h3 class="programming-item__name">JavaScript</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                    </div>
+                </div>
 
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/react.png" alt="">
+                    <h3 class="programming-item__name">React</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                    </div>
+                </div>
+
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/typescript.png" alt="">
+                    <h3 class="programming-item__name">TypeScript</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                    </div>
+                </div>
 
                 <!-- </div> -->
 
                 <!-- <div class="programming-section2"> -->
 
-                    <div class="programming-item">
-                        <img class="programming-item__logo" src="/dist/img/bootstrap.png" alt="">
-                        <h3 class="programming-item__name">Bootstrap</h3>
-                        <div class="programming-item__lvl">
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                        </div>
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/bootstrap.png" alt="">
+                    <h3 class="programming-item__name">Bootstrap</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class=" programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
                     </div>
+                </div>
 
-                    <div class="programming-item">
-                        <img class="programming-item__logo" src="/dist/img/Git-Icon-1788C.png" alt="">
-                        <h3 class="programming-item__name">GIT</h3>
-                        <div class="programming-item__lvl">
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                        </div>
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/Git-Icon-1788C.png" alt="">
+                    <h3 class="programming-item__name">GIT</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
                     </div>
+                </div>
 
-                    <div class="programming-item">
-                        <img class="programming-item__logo" src="/dist/img/react.png" alt="">
-                        <h3 class="programming-item__name">React</h3>
-                        <div class="programming-item__lvl">
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                        </div>
+                <div class="programming-item">
+                    <img class="programming-item__logo" src="/dist/img/gulp1.png" alt="">
+                    <h3 class="programming-item__name">Gulp</h3>
+                    <div class="programming-item__lvl">
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty programming-item__lvl-active"></div>
+                        <div class="programming-item__lvl-empty"></div>
+                        <div class="programming-item__lvl-empty"></div>
                     </div>
+                </div>
 
-                    <div class="programming-item">
-                        <img class="programming-item__logo" src="/dist/img/typescript.png" alt="">
-                        <h3 class="programming-item__name">TypeScript</h3>
-                        <div class="programming-item__lvl">
-                            <div class="programming-item__lvl-active"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                            <div class="programming-item__lvl-empty"></div>
-                        </div>
-                    </div>
+
 
                 <!-- </div> -->
             </div>
@@ -364,7 +387,7 @@
         </div>
     </div>
 
-    <div class="contact section">
+    <div class="contact section" id="contact">
         <p class="contact__section-name"><span>kontakt</span></p>
         <div class="contact-box container">
 
