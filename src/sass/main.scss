@@ -255,7 +255,7 @@ body {
 			&__title3 {
 				@include titleText(3rem);
 				color: var(--grey-yellow);
-				text-align: center;
+				// text-align: center;
 			}
 			&__par {
 				@include paraText(2rem);
@@ -571,11 +571,16 @@ body {
 		@include titleText(3rem);
 		@include sectionName;
 		text-align: center;
-		margin-bottom: 1em;
+		// margin-bottom: 1em;
 		margin-top: -1em;
 	}
 	overflow: hidden;
 	.skills-box {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		// align-items: center;
 		.programming {
 			display: flex;
 			// flex-direction: column;
@@ -587,15 +592,15 @@ body {
 				display: flex;
 				flex-wrap: wrap;
 				// background-color: rgba(255, 255, 255, 0.2);
-				margin: 1em 8%;
+				margin: 0.5em 8%;
 				width: 200px;
 				align-items: center;
 				// justify-content: center;
 				filter: grayscale(100%);
-				transition: 1s;
+				transition: 0.5s;
 
 				&__logo {
-					width: 60px;
+					width: 50px;
 					// background-color: rgba(231, 15, 15, 0.2);
 				}
 				&__name {
@@ -628,7 +633,7 @@ body {
 						margin: 0 0.5em;
 					}
 					&-active {
-						transition: 1s;
+						transition: 0.5s;
 					}
 				}
 			}
@@ -652,40 +657,47 @@ body {
 		.exp {
 			display: flex;
 			justify-content: space-around;
+			filter: grayscale(100%);
+			transition: filter 0.5s;
 
+			&:hover {
+				filter: grayscale(0%);
+
+				.exp-title {
+					transform: scale(1.1);
+				}
+			}
 			.exp-title {
 				text-align: center;
 				@include titleText(2rem);
-				// @include paraText(2rem);
-				color: var(--yellow);
+				@include sectionName;
+				margin-bottom: 0.5em;
+				transition: transform 0.5s;
+				span {
+					padding: 0.5rem 1rem;
+				}
 			}
 			.exp-item {
 				// background-color: rgba(255, 255, 255, 0.2);
-				margin: 1em;
 				position: relative;
+				// margin: 1em;
+				padding: 1em;
 				&__title1 {
-					@include titleText(2rem);
+					@include titleText(1.8rem);
 					color: var(--gold);
 				}
 				&__title2 {
-					@include paraText(1.8rem);
+					@include paraText(1.6rem);
 					// text-transform: uppercase;
 					font-weight: var(--fw-medium);
 				}
 				&__date {
+					@include titleText(1.8rem);
 					text-transform: lowercase;
-					// display: inline-block;
 					position: absolute;
-					// min-width: 150px;
-					padding: 0.1em 1em;
-					opacity: 0.8;
+					padding-left: 1em;
 					right: 0em;
-
 					color: var(--gold);
-					font-size: 1.6rem;
-					border: 2px solid var(--gold);
-					border-radius: 40px;
-					// text-align: center;
 				}
 				&__text {
 					@include paraText(1.6rem);
@@ -896,7 +908,7 @@ body {
 		.skills-box {
 			.programming {
 				.programming-item {
-					margin: 1em 2%;
+					margin: 0.5em 2%;
 					&__logo {
 						width: 50px;
 					}
@@ -929,7 +941,7 @@ body {
 				width: 100%;
 				&__title1,
 				&__title2,
-				&__par {
+				&__title3 {
 					text-align: center;
 				}
 			}
@@ -937,7 +949,7 @@ body {
 	}
 	//-------About section----------
 	.about {
-		padding-bottom: 0.5em;
+		padding: 2em 0 1.2em;
 		.about-box {
 			flex-direction: column;
 			.about-foto {
@@ -945,12 +957,12 @@ body {
 				height: 60%;
 				&__card-img {
 					top: 6%;
-					height: 94%;
+					height: 90%;
 					padding: 0.5em;
 				}
 				&__card-info {
 					top: 6%;
-					height: 94%;
+					height: 90%;
 					&-title {
 						font-size: 1.6rem;
 						margin-bottom: 0em;
@@ -1008,6 +1020,20 @@ body {
 					}
 				}
 			}
+
+			.exp {
+				flex-direction: column;
+				.exp-item {
+					padding: 0.3em 0.5em 0.7em;
+					.exp-item__text {
+						display: none;
+					}
+				}
+				.work,
+				.education {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
@@ -1028,6 +1054,32 @@ body {
 		// width: 10px;
 		// padding: 0.1em;
 		// margin: 0;
+	}
+
+	//-------HERO section----------
+	.hero {
+		// height: ;
+		.hero-box {
+			.hero-img {
+				display: none;
+			}
+			.hero-text {
+				width: 100%;
+				&__title1 {
+					font-size: 4rem;
+					margin-bottom: 0.3em;
+				}
+				&__title2 {
+					font-size: 4rem;
+					line-height: 1.2;
+					// margin-bottom: 3em;
+				}
+				&__title3 {
+					// line-height: 1.2;
+					font-size: 2.9rem;
+				}
+			}
+		}
 	}
 
 	//-------About section----------
@@ -1105,22 +1157,27 @@ body {
 
 	.skills {
 		&__section-name {
-			font-size: 2rem;
+			font-size: 1.8rem;
+			margin-top: -1.5em;
+			margin-bottom: 0.5em;
+			span {
+				padding: 0.5rem;
+			}
 		}
 		.skills-box {
 			.programming {
 				.programming-item {
 					width: 33%;
-					margin: 0 0 1.5em;
+					margin: 0 0 0.6em;
 					padding-left: 0;
 					justify-content: center;
 					&__logo {
-						width: 40px;
+						width: 30px;
 					}
 					&__name {
 						width: 100%;
 						text-align: center;
-						margin: 0.5em 0;
+						// margin: 0.5em 0;
 						font-size: 1.2rem;
 					}
 					&__lvl {
@@ -1143,6 +1200,17 @@ body {
 						box-shadow: 0 0 2px var(--yellow), 0 0 4px var(--yellow),
 							0 0 6px var(--yellow);
 					}
+				}
+			}
+			.exp {
+				.exp-title {
+					margin-bottom: 0;
+					span {
+						padding: 0rem 0.5rem;
+					}
+				}
+				.exp-item {
+					// margin-bottom: 0em;
 				}
 			}
 		}
