@@ -50,11 +50,11 @@ body {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	font-family: var(--ff-);
-	// overflow-x: hidden; // !!!!!!!!!!!!!!!!!!!!!!!!!!
+
 }
 
 .container {
-	// max-width: 1800px;
+	max-width: 2200px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 5%;
@@ -67,7 +67,6 @@ body {
 
 .btn {
 	display: inline-block;
-	// min-width: 150px;
 	padding: 0.5em 2em;
 	background: none;
 	opacity: 0.5;
@@ -222,7 +221,6 @@ body {
 		align-items: flex-end;
 
 		.hero-img {
-			// background-color: #fff;
 			position: relative;
 			width: 50%;
 			height: 100%;
@@ -255,7 +253,6 @@ body {
 			&__title3 {
 				@include titleText(3rem);
 				color: var(--grey-yellow);
-				// text-align: center;
 			}
 			&__par {
 				@include paraText(2rem);
@@ -461,12 +458,11 @@ body {
 		@include titleText(3rem);
 		@include sectionName;
 		margin-top: -1em;
-		margin-bottom: 1em;
+		margin-bottom: 1.5em;
 	}
 
 	.portfolio-box {
 		position: relative;
-		// max-height: 100%;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -475,7 +471,6 @@ body {
 		.portfolio-item {
 			display: flex;
 			flex-direction: column;
-			// justify-content: space-between;
 			@include glass;
 			overflow: hidden;
 			width: 32%;
@@ -486,7 +481,7 @@ body {
 				width: 100%;
 				border-radius: 20px;
 				padding: 0.5em;
-				opacity: 0.2;
+				opacity: 0.1;
 				transition: opacity 1s, transform 3s;
 			}
 			&__content {
@@ -494,32 +489,36 @@ body {
 				height: 100%;
 				align-items: center;
 				flex-direction: column;
-				// background-color: rgba(255, 0, 0, 0.1);
+				justify-content: space-around;
 				padding: 1em;
 				transition: background 1s;
+				opacity: 0.3;
+				transition: opacity 1s;
 
 				&-title {
 					@include titleText(2rem);
-					color: var(--grey-yellow);
+					color: var(--dark-yellow);
 					text-align: center;
 					margin-bottom: 1em;
 					transition: color 1s;
 				}
 				&-text {
-					@include paraText(1.4rem);
-					text-align: justify;
-					color: var(--light-grey);
+					@include paraText(1.8rem);
+					text-align: center;
+					color: var(--dark-white);
 					transition: color 1s;
-					flex-grow: 2;
+
+					span {
+						color: var(--gold);
+						font-weight: var(--fw-medium);
+					}
 				}
 
 				&-link {
 					display: flex;
 					text-align: center;
 					justify-content: center;
-					opacity: 0.5;
 					transition: opacity 1s;
-					// background-color: green;
 					width: 100%;
 					&-item {
 						padding: 0 1em;
@@ -540,16 +539,7 @@ body {
 					transform: scale(1.03);
 				}
 				.portfolio-item__content {
-					&-title {
-						color: var(--dark-yellow);
-					}
-					&-text {
-						color: var(--dark-white);
-					}
-					&-btn,
-					&-link {
-						opacity: 1;
-					}
+					opacity: 1;
 				}
 			}
 		}
@@ -571,7 +561,6 @@ body {
 		@include titleText(3rem);
 		@include sectionName;
 		text-align: center;
-		// margin-bottom: 1em;
 		margin-top: -1em;
 	}
 	overflow: hidden;
@@ -580,51 +569,37 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		// align-items: center;
 		.programming {
 			display: flex;
-			// flex-direction: column;
 			justify-content: space-around;
 			flex-wrap: wrap;
-			// background-color: rgba(88, 6, 6, 0.2);
-			max-width: 1700px;
 			.programming-item {
 				display: flex;
 				flex-wrap: wrap;
-				// background-color: rgba(255, 255, 255, 0.2);
 				margin: 0.5em 8%;
 				width: 200px;
 				align-items: center;
-				// justify-content: center;
 				filter: grayscale(100%);
 				transition: 0.5s;
 
 				&__logo {
 					width: 50px;
-					// background-color: rgba(231, 15, 15, 0.2);
 				}
 				&__name {
 					@include paraText(2rem);
 					margin: 0.5em 0.5em 0;
 					color: var(--yellow);
-
-					// background-color: rgba(2, 235, 41, 0.2);
 				}
 				&__lvl {
 					display: flex;
 					flex-direction: row;
-					// justify-content: center;
 					align-items: center;
-					// justify-content: center;
-					// justify-content: center;
-					// background-color: rgba(91, 8, 247, 0.2);
 					margin: 1em 0;
 					width: 100%;
 
 					&-empty {
 						width: 15px;
 						height: 15px;
-						// border-radius: 100%;
 						background-color: transparent;
 						background-color: var(--medium-grey);
 						border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -645,9 +620,7 @@ body {
 				.programming-item__lvl-active {
 					width: 15px;
 					height: 15px;
-					// border-radius: 100%;
 					background-color: var(--white);
-					// border: 1px solid black;
 					box-shadow: 0 0 3px var(--yellow), 0 0 6px var(--yellow),
 						0 0 9px var(--yellow), 0 0 12px var(--yellow);
 					margin: 0 0.5em;
@@ -678,9 +651,7 @@ body {
 				}
 			}
 			.exp-item {
-				// background-color: rgba(255, 255, 255, 0.2);
 				position: relative;
-				// margin: 1em;
 				padding: 1em;
 				&__title1 {
 					@include titleText(1.8rem);
@@ -688,7 +659,6 @@ body {
 				}
 				&__title2 {
 					@include paraText(1.6rem);
-					// text-transform: uppercase;
 					font-weight: var(--fw-medium);
 				}
 				&__date {
@@ -739,7 +709,6 @@ body {
 		height: 90%;
 		.contact-box-info {
 			width: 30%;
-			// background-color: rgba(69, 247, 63, 0.3);
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
@@ -748,13 +717,11 @@ body {
 				text-align: center;
 				.text1 {
 					@include paraText(1.4rem);
-					// text-transform: uppercase;
 					font-weight: var(--fw-medium);
 					color: var(--yellow);
 				}
 
 				.text2 {
-					// @include paraText(2rem)
 					font-family: var(--ff-primary);
 					color: var(--dark-white);
 					text-transform: none;
@@ -766,15 +733,12 @@ body {
 		}
 		.contact-box-form {
 			display: flex;
-			// flex-direction: column;
 			flex-wrap: wrap;
 			width: 70%;
-			// background-color: #f73f544d;
 			padding: 2%;
 			align-items: center;
 			justify-content: center;
 			&__header {
-				// @include titleText(2rem);
 				@include paraText(2rem);
 				text-transform: uppercase;
 				color: var(--yellow);
@@ -821,8 +785,6 @@ body {
 			textarea {
 				width: 100%;
 			}
-			&__btn {
-			}
 		}
 	}
 }
@@ -866,8 +828,6 @@ body {
 	//-------Skills section----------
 
 	.skills {
-		&__section-name {
-		}
 		.skills-box {
 			.programming {
 				.programming-item {
@@ -900,24 +860,64 @@ body {
 			}
 		}
 	}
+
+	//-------Portfolio section-------
+	.portfolio {
+		padding: 3em 0em 1em;
+		&__section-name {
+			font-size: 2rem;
+			margin-bottom: 0.5em;
+			span {
+				padding: 0.5rem;
+			}
+		}
+		.portfolio-box {
+			flex-direction: column;
+			align-items: center;
+			height: 98%;
+			.portfolio-item {
+				width: 90%;
+				margin: 0.4em;
+				&__img {
+					display: none;
+				}
+				&__content {
+					padding: 0;
+					margin: 0.2em 1em 0;
+					justify-content: space-around;
+				}
+				&__content-title {
+					margin-bottom: 0.2em;
+				}
+				&__content-text {
+					font-size: 1.6rem;
+				}
+				&__content-link {
+					font-size: 1rem;
+					p {
+						display: none;
+					}
+					&-item {
+						padding: 0 2em;
+					}
+
+					img {
+						width: 30px;
+					}
+				}
+			}
+		}
+	}
+
 	//-------Skills section----------
 
 	.skills {
-		&__section-name {
-		}
 		.skills-box {
 			.programming {
 				.programming-item {
 					margin: 0.5em 2%;
 					&__logo {
 						width: 50px;
-					}
-					&__name {
-					}
-					&__lvl {
-						&-active,
-						&-empty {
-						}
 					}
 				}
 			}
@@ -1001,8 +1001,6 @@ body {
 	//-------Skills section----------
 
 	.skills {
-		&__section-name {
-		}
 		.skills-box {
 			.programming {
 				.programming-item {
@@ -1010,13 +1008,6 @@ body {
 					margin: 1em 1%;
 					&__logo {
 						width: 50px;
-					}
-					&__name {
-					}
-					&__lvl {
-						&-active,
-						&-empty {
-						}
 					}
 				}
 			}
@@ -1043,7 +1034,6 @@ body {
 		font-size: 50%;
 	}
 	.hamburger {
-		// width: 50px;
 		transform: scale(0.8);
 		top: 0.4em;
 	}
@@ -1051,14 +1041,10 @@ body {
 		&__item {
 			width: 110px;
 		}
-		// width: 10px;
-		// padding: 0.1em;
-		// margin: 0;
 	}
 
 	//-------HERO section----------
 	.hero {
-		// height: ;
 		.hero-box {
 			.hero-img {
 				display: none;
@@ -1072,10 +1058,8 @@ body {
 				&__title2 {
 					font-size: 4rem;
 					line-height: 1.2;
-					// margin-bottom: 3em;
 				}
 				&__title3 {
-					// line-height: 1.2;
 					font-size: 2.9rem;
 				}
 			}
@@ -1095,6 +1079,9 @@ body {
 					.about-desc__section-name {
 						font-size: 2rem;
 						padding-top: 1em;
+						span {
+							padding: 0.5rem;
+						}
 					}
 					.about-desc__title {
 						font-size: 2.6rem;
@@ -1119,36 +1106,11 @@ body {
 
 	//-------Portfolio section----------
 	.portfolio {
-		&__section-name {
-			font-size: 2rem;
-		}
-		.portfolio-box {
-			flex-direction: column;
-			align-items: center;
-			.portfolio-item {
-				width: 90%;
-				margin: 0.5em;
-				&__img {
-					display: none;
-				}
-				&__content {
-					padding: 0.5em;
-				}
-				&__content-title {
-					margin-bottom: 0.2em;
-				}
-				&__content-text {
-					margin-bottom: 0.8em;
-				}
-				&__content-link {
-					font-size: 1rem;
-					&-item {
-						padding: 0 2em;
-					}
 
-					img {
-						width: 30px;
-					}
+		.portfolio-box {
+			.portfolio-item {
+				&__content-text {
+					font-size: 1.4rem;
 				}
 			}
 		}
@@ -1177,7 +1139,6 @@ body {
 					&__name {
 						width: 100%;
 						text-align: center;
-						// margin: 0.5em 0;
 						font-size: 1.2rem;
 					}
 					&__lvl {
@@ -1209,9 +1170,6 @@ body {
 						padding: 0rem 0.5rem;
 					}
 				}
-				.exp-item {
-					// margin-bottom: 0em;
-				}
 			}
 		}
 	}
@@ -1220,11 +1178,13 @@ body {
 	.contact {
 		&__section-name {
 			font-size: 2rem;
+			span {
+				padding: 0.5rem;
+			}
 		}
 		.contact-box {
 			flex-direction: column;
 			.contact-box-info {
-				// padding: 2em 0 1.5em;
 				flex-direction: row;
 				align-items: center;
 				width: 100%;
@@ -1233,10 +1193,7 @@ body {
 			.contact-box-form {
 				text-align: center;
 				width: 100%;
-				height: 100%;
-				&__input {
-					// padding: 2em;
-				}
+				height: 70%;
 			}
 		}
 	}
@@ -1251,9 +1208,9 @@ body {
 		.portfolio-box {
 			flex-direction: column;
 			align-items: center;
-			height: 95%;
+			height: 98%;
 			.portfolio-item {
-				width: 100%;
+				width: 90%;
 				margin: 0.5em;
 				&__img {
 					display: none;

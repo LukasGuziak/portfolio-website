@@ -39,9 +39,6 @@
     <header class="header">
         <div class="header-box container">
             <div class="logo-space">
-                <!-- <a href="">
-                    <img class="logo__item" src="../dist/img/logo.png" alt="logo formy lukasdev">
-                </a> -->
             </div>
             <nav class="navigation">
                 <ul class="navigation__list">
@@ -67,7 +64,7 @@
 
     <div class="hero" id="hero">
 
-        <div class="hero-box">
+        <div class="hero-box container">
 
             <div class="hero-img">
                 <img class='hero-img__item' src="/dist/img/ja-M.png" alt="">
@@ -110,7 +107,6 @@
 
             <div class="about-foto">
                 <div class="about-foto__card-img">
-                    <!-- <img class="about-foto__img-item" src="/dist/img/programmer-example.jpg" alt=""> -->
                     <p class="about-desc__section-name hiden"><span>O mnie</span></p>
                     <h2 class="about-desc__title hiden">frontend developer</h2>
                     <p class="about-foto__card-img-info">info card <i class="fas fa-angle-double-right"></i></p>
@@ -163,6 +159,13 @@
                         <h2 class="portfolio-item__content-title"> Lukas dev</h2>
                     </a>
                     <p class="portfolio-item__content-text">Strona którą właśnie przeglądasz.</p>
+                    <p class="portfolio-item__content-text">Ocena strony przez <span>Google Lighthouse:</span></p>
+                    <p class="portfolio-item__content-text">
+                        wydajność - <span>--</span><br>
+                        dostępność - <span>--</span><br>
+                        najlepsze praktyki - <span>--</span><br>
+                        SEO - <span>--</span>
+                    </p>
                     <div class="portfolio-item__content-link">
                         <a class="portfolio-item__content-link-item" href="https://www.lukasdev.pl/"
                             target="_blank"><img src="/dist/img/www.png" alt="">
@@ -211,6 +214,14 @@
                         <h2 class="portfolio-item__content-title">Kancelaria prawna</h2>
                     </a>
                     <p class="portfolio-item__content-text">Strona stworzona dla jednej z Łódzkich kancelari. </p>
+                    <p class="portfolio-item__content-text">Ocena strony przez <span>Google Lighthouse:</span></p>
+                    <p class="portfolio-item__content-text">
+                        wydajność - <span>89</span><br>
+                        dostępność - <span>100</span><br>
+                        najlepsze praktyki - <span>92</span><br>
+                        SEO - <span>96</span>
+                    </p>
+
                     <div class="portfolio-item__content-link">
                         <a class="portfolio-item__content-link-item" href="https://krp-ww.pl/" target="_blank"><img
                                 src="/dist/img/www.png" alt="">
@@ -232,7 +243,6 @@
         <div class="skills-box container">
 
             <div class="programming">
-                <!-- <div class="programming-section1"> -->
 
                 <div class="programming-item">
                     <img class="programming-item__logo" src="/dist/img/html-5.png" alt="">
@@ -306,10 +316,6 @@
                     </div>
                 </div>
 
-                <!-- </div> -->
-
-                <!-- <div class="programming-section2"> -->
-
                 <div class="programming-item">
                     <img class="programming-item__logo" src="/dist/img/bootstrap.png" alt="">
                     <h3 class="programming-item__name">Bootstrap</h3>
@@ -346,9 +352,6 @@
                     </div>
                 </div>
 
-
-
-                <!-- </div> -->
             </div>
 
             <div class="exp">
@@ -447,7 +450,7 @@
                 <input class="contact-box-form__input" type="number" placeholder="Twój telefon" name="phone" required>
                 <input class="contact-box-form__input" type="email" placeholder="Twój adres meilowy" name="email"
                     required>
-                <input class="contact-box-form__input" type="email" placeholder="Temat wiadomości" name="subject"
+                <input class="contact-box-form__input" placeholder="Temat wiadomości" name="subject"
                     required>
                 <textarea class="contact-box-form__input" placeholder="wpisz text wiadomości" id="" cols="30" rows="7"
                     name="message" required></textarea>
