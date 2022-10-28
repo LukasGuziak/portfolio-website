@@ -25,7 +25,7 @@
 <body>
 
     <div class="logo">
-        <a href="#hero">
+        <a href="#hero" aria-label="początek strony">
             <img class="logo__item" src="/dist/img/logo.png" alt="logo lukasdev">
         </a>
     </div>
@@ -50,12 +50,14 @@
                 </ul>
             </nav>
             <div class="reasume">
-                <button class="reasume__btn btn">Pobierz CV</button>
+                <a href="/dist/img/Łukasz Guziak-CV-PL.pdf" download>
+                    <button class="reasume__btn btn">Pobierz CV</button>
+                </a>
             </div>
             <div class="social">
-                <a class="social__link" href="https://github.com/LukasGuziak" target="_blank"><img class="social__img"
+                <a class="social__link" href="https://github.com/LukasGuziak" target="_blank" aria-label="github link"><img class="social__img"
                         src="/dist/img/github.svg" alt=""></a>
-                <a class="social__link" href=""><img class="social__img" src="/dist/img/linkedin.svg" alt=""></a>
+                <a class="social__link" href="" aria-label="linkedin link"><img class="social__img" src="/dist/img/linkedin.svg" alt=""></a>
             </div>
         </div>
 
@@ -67,7 +69,7 @@
         <div class="hero-box container">
 
             <div class="hero-img">
-                <img class='hero-img__item' src="/dist/img/ja-M.png" alt="">
+                <img class='hero-img__item' src="/dist/img/ja-s.png" alt="">
             </div>
 
             <div class="hero-text">
@@ -89,8 +91,8 @@
                         alt="">
                     <p>contact</p>
                 </a>
-                <a class="hero-text__link hero-text__link--five" href=""><img src="/dist/img/curriculum-vitae.png"
-                        alt="">
+                <a class="hero-text__link hero-text__link--five" href="/dist/img/Łukasz Guziak-CV-PL.pdf" download><img
+                        src="/dist/img/curriculum-vitae.png" alt="">
                     <p>CV</p>
                 </a>
             </div>
@@ -119,9 +121,9 @@
                     <p class="about-foto__card-info-title">Mail</p>
                     <p class="about-foto__card-info-text">guziak.luk@gmail.com</p>
                     <p class="about-foto__card-info-title">Telefon</p>
-                    <p class="about-foto__card-info-text">+48 888-333-222</p>
+                    <p class="about-foto__card-info-text">+48 881-333-977</p>
                     <p class="about-foto__card-info-title">Adres</p>
-                    <p class="about-foto__card-info-text">94-300 Łódź, ul. Ulicowa 11</p>
+                    <p class="about-foto__card-info-text">94-307 Łódź, ul. Sułkowskiego 46</p>
                 </div>
             </div>
 
@@ -131,12 +133,16 @@
                 <h3 class="about-desc__title2">Pasjonat programowania i tworzenia stron internetowych z Łodzi</h3>
                 <p class="about-desc__text">Cześć! Nazywam się Łukasz Guziak i jestem twórcą stron internetowych. Stało
                     się to moją pasją od ukończenia studiów Uniwersytetu Łódzkiego na kierunku informatyka.
-                    Stale poszerzam swoją wiedzę i zdobywam nowe umiejętności, poprzez nowe projekty i uczestnictwo w licznych kursach.
-                    Programowanie to dla mnie bardzo satysfakcjonujący proces twórczy, dlatego jestem pewien, że otrzymasz moje pełne zaangarzowanie i usługi na
+                    Stale poszerzam swoją wiedzę i zdobywam nowe umiejętności, poprzez nowe projekty i uczestnictwo w
+                    licznych kursach.
+                    Programowanie to dla mnie bardzo satysfakcjonujący proces twórczy, dlatego jestem pewien, że
+                    otrzymasz moje pełne zaangarzowanie i usługi na
                     najwyższym poziomie.
                 </p>
                 <div class="about-desc__reasume">
-                    <button class="reasume__btn btn">Pobierz CV</button>
+                    <a href="/dist/img/Łukasz Guziak-CV-PL.pdf" download>
+                        <button class="reasume__btn btn">Pobierz CV</button>
+                    </a>
                 </div>
 
 
@@ -152,10 +158,10 @@
 
             <div class="portfolio-item">
                 <a href="#hero">
-                    <img class="portfolio-item__img" src="/dist/img/lukas-www.jpg" alt="">
+                    <img class="portfolio-item__img" src="/dist/img/lukas-www.jpg" alt="zdjęcie strony internetowej" aria-label="link do strony lukasdev.pl">
                 </a>
                 <div class="portfolio-item__content">
-                    <a class="portfolio-item__content-link-item" href="https://www.lukasdev.pl/" target="_blank">
+                    <a class="portfolio-item__content-link-item" href="https://www.lukasdev.pl/" target="_blank" aria-label="link do strony lukasdev.pl">
                         <h2 class="portfolio-item__content-title"> Lukas dev</h2>
                     </a>
                     <p class="portfolio-item__content-text">Strona którą właśnie przeglądasz.</p>
@@ -168,12 +174,12 @@
                     </p>
                     <div class="portfolio-item__content-link">
                         <a class="portfolio-item__content-link-item" href="https://www.lukasdev.pl/"
-                            target="_blank"><img src="/dist/img/www.png" alt="">
+                            target="_blank"><img src="/dist/img/www.png" alt="ikona z napisem www" aria-label="link do strony lukasdev.pl">
                             <p>strona</p>
                         </a>
                         <a class="portfolio-item__content-link-item"
                             href="https://github.com/LukasGuziak/portfolio-website" target="_blank"><img
-                                src="/dist/img/github.png" alt="">
+                                src="/dist/img/github.png" alt="ikona github" aria-label="link do plików na github">
                             <p>github</p>
                         </a>
                     </div>
@@ -181,11 +187,11 @@
             </div>
 
             <div class="portfolio-item">
-                <a href="https://lukasdevtest2.tech/" target="_blank">
-                    <img class="portfolio-item__img" src="/dist/img/packi-www.jpg" alt="">
+                <a href="https://lukasdevtest2.tech/" target="_blank" aria-label="link do strony">
+                    <img class="portfolio-item__img" src="/dist/img/packi-www.jpg" alt="zdjęcie strony firmy meblowej">
                 </a>
                 <div class="portfolio-item__content">
-                    <a class="portfolio-item__content-link-item" href="https://lukasdevtest2.tech/" target="_blank">
+                    <a class="portfolio-item__content-link-item" href="https://lukasdevtest2.tech/" target="_blank" aria-label="link do strony firmy meblowej">
                         <h2 class="portfolio-item__content-title">Firma meblowa</h2>
                     </a>
                     <p class="portfolio-item__content-text">Strona zaprojektowana dla Łódzkiej firmy tworzącej meble i
@@ -193,12 +199,12 @@
                         znajduje się na serwerze testowym pod adresem www.lukasdevtest2.tech </p>
                     <div class="portfolio-item__content-link">
                         <a class="portfolio-item__content-link-item" href="https://lukasdevtest2.tech/"
-                            target="_blank"><img src="/dist/img/www.png" alt="">
+                            target="_blank"><img src="/dist/img/www.png" alt="ikona z napisem www" aria-label="link do strony firmy meblowej">
                             <p>strona</p>
                         </a>
                         <a class="portfolio-item__content-link-item"
                             href="https://github.com/LukasGuziak/furnishing-firm-website" target="_blank"><img
-                                src="/dist/img/github.png" alt="">
+                                src="/dist/img/github.png" alt="ikona github" aria-label="link do plików na github">
                             <p>github</p>
                         </a>
                     </div>
@@ -206,30 +212,30 @@
             </div>
 
             <div class="portfolio-item">
-                <a href="https://krp-ww.pl/" target="_blank">
-                    <img class="portfolio-item__img" src="/dist/img/walczakowski-www.jpg" alt="">
+                <a href="https://krp-ww.pl/" target="_blank" aria-label="link do strony radcy prawnego">
+                    <img class="portfolio-item__img" src="/dist/img/walczakowski-www.jpg" alt="zdjęcie strony internetowej">
                 </a>
                 <div class="portfolio-item__content">
-                    <a class="portfolio-item__content-link-item" href="https://krp-ww.pl/" target="_blank">
+                    <a class="portfolio-item__content-link-item" href="https://krp-ww.pl/" target="_blank" aria-label="link do strony radcy prawnego">
                         <h2 class="portfolio-item__content-title">Kancelaria prawna</h2>
                     </a>
                     <p class="portfolio-item__content-text">Strona stworzona dla jednej z Łódzkich kancelari. </p>
-                    <p class="portfolio-item__content-text">Ocena strony przez <span>Google Lighthouse:</span></p>
+                    <p class="portfolio-item__content-text">Ocena strony w <span>Google Lighthouse:</span></p>
                     <p class="portfolio-item__content-text">
-                        wydajność - <span>89</span><br>
-                        dostępność - <span>100</span><br>
-                        najlepsze praktyki - <span>92</span><br>
-                        SEO - <span>96</span>
+                        wydajność - <span>89%</span><br>
+                        dostępność - <span>100%</span><br>
+                        najlepsze praktyki - <span>92%</span><br>
+                        SEO - <span>96%</span>
                     </p>
 
                     <div class="portfolio-item__content-link">
-                        <a class="portfolio-item__content-link-item" href="https://krp-ww.pl/" target="_blank"><img
-                                src="/dist/img/www.png" alt="">
+                        <a class="portfolio-item__content-link-item" href="https://krp-ww.pl/" target="_blank" aria-label="link do strony radcy prawnego"><img
+                                src="/dist/img/www.png" alt="ikona z napisem www">
                             <p>strona</p>
                         </a>
                         <a class="portfolio-item__content-link-item"
-                            href="https://github.com/LukasGuziak/websiteAdvocateOffice" target="_blank"><img
-                                src="/dist/img/github.png" alt="">
+                            href="https://github.com/LukasGuziak/websiteAdvocateOffice" target="_blank" aria-label="link do plików na github"><img
+                                src="/dist/img/github.png" alt="ikona github">
                             <p>github</p>
                         </a>
                     </div>
@@ -415,7 +421,7 @@
             <div class="contact-box-info">
 
                 <div class="contact-box-info__item">
-                    <a class="" href=""><img src="/dist/img/phone-call.png" alt="">
+                    <a href="tel:+48881333977" aria-label="telefon"><img src="/dist/img/phone-call.png" alt="">
                         <p class="text1">telefon</p>
                         <p class="text2">+48 881-333-977</p>
                     </a>
@@ -423,20 +429,19 @@
 
 
                 <div class="contact-box-info__item">
-                    <a class="" href=""><img src="/dist/img/email.png" alt="">
+                    <a href="mailto:guziak.luk@gmail.com" aria-label="email"><img src="/dist/img/email.png" alt="">
                         <p class="text1">mail</p>
                         <p class="text2">guziak.luk@gmail.com</p>
                     </a>
                 </div>
 
                 <div class="contact-box-info__item">
-                    <a class="" href=""><img src="/dist/img/maps.png" alt="">
+                    <a class="" href="https://goo.gl/maps/HBriz4HpSoY5UXdv7" target="_blank"><img src="/dist/img/maps.png" alt="">
                         <p class="text1">adres</p>
                         <p class="text2">94-307 Łódź</p>
-                        <p class="text2">ul. Ulicowa 20 m5</p>
+                        <p class="text2">ul. Sułkowskiego 46</p>
                     </a>
                 </div>
-
             </div>
 
 
@@ -445,13 +450,11 @@
                 <p class="contact-box-form__text">Jestem gotowy pomóc w każdym projekcie, który obejmuje moje
                     umiejętności.</p>
                 <input class="contact-box-form__input" type="text" placeholder="Twoje imię" name="name" required>
-                <!-- <input type="hidden" name="_next" value="https://lukasdevtest2.tech/thankyou.html"> -->
                 <input type="hidden" name="_subject" value="LukasDev - wiadomość ze strony">
                 <input class="contact-box-form__input" type="number" placeholder="Twój telefon" name="phone" required>
                 <input class="contact-box-form__input" type="email" placeholder="Twój adres meilowy" name="email"
                     required>
-                <input class="contact-box-form__input" placeholder="Temat wiadomości" name="subject"
-                    required>
+                <input class="contact-box-form__input" placeholder="Temat wiadomości" name="subject" required>
                 <textarea class="contact-box-form__input" placeholder="wpisz text wiadomości" id="" cols="30" rows="7"
                     name="message" required></textarea>
                 <input class="contact-box-form__btn btn" type="submit" value="wyślij ">
