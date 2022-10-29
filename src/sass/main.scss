@@ -50,7 +50,6 @@ body {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	font-family: var(--ff-);
-
 }
 
 .container {
@@ -105,6 +104,24 @@ body {
 	&--active {
 		left: 50%;
 		transform: translateX(-50%);
+	}
+}
+
+.language {
+	position: fixed;
+	top: 4.5em;
+	right: 1em;
+	z-index: 10000;
+	opacity: 0.3;
+	transition: opacity 0.3s;
+	&__item {
+		img {
+			width: 40px;
+		}
+		padding: 5px 15px;
+	}
+	&:hover {
+		opacity: 1;
 	}
 }
 
@@ -660,6 +677,14 @@ body {
 				&__title2 {
 					@include paraText(1.6rem);
 					font-weight: var(--fw-medium);
+					a{
+						@include paraText(1.6rem);
+						color:var(--grey-yellow);
+					}
+					a:hover{
+						color:var(--yellow);
+					}
+
 				}
 				&__date {
 					@include titleText(1.8rem);
@@ -1036,10 +1061,19 @@ body {
 	.hamburger {
 		transform: scale(0.8);
 		top: 0.4em;
+		right: 0.4rem;
 	}
 	.logo {
 		&__item {
 			width: 110px;
+		}
+	}
+	.language {
+		right: 0.6em;
+		&__item {
+			img {
+				width: 32px;
+			}
 		}
 	}
 
@@ -1106,7 +1140,6 @@ body {
 
 	//-------Portfolio section----------
 	.portfolio {
-
 		.portfolio-box {
 			.portfolio-item {
 				&__content-text {
